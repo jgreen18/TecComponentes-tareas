@@ -34,7 +34,7 @@ const signUp = async (user_name, email, pass, date_birth, address) => {
         };
         status = 500;
         return {
-            status, 
+            status,
             response
         }
 
@@ -83,7 +83,7 @@ const signUp = async (user_name, email, pass, date_birth, address) => {
         status = 400;
     }
 
-    
+
     return {
         status, response,
     };

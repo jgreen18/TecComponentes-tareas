@@ -1,9 +1,8 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const Database = require("./components/Database/Database");
 const User = require("./components/User/User");
-
+const Task = require("./components/Tasks/Task");
 //componentes
 
 //configuracion de express
@@ -17,6 +16,7 @@ app.use(cors());
 
 
 app.use("/usuarios", User.api);
+app.use("/task" , Task.api);
 
 
 
