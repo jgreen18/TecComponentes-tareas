@@ -29,12 +29,13 @@ const signUp = async (user_name, email, pass, date_birth, address) => {
         console.log(error);
 
         response = {
-            message: "Ha ocurrido un error al registra al usuario no encontro el correo ",
+            message: "Ha ocurrido un error al registra al usuario ",
             data: null,
         };
         status = 500;
         return {
-            status, response
+            status, 
+            response
         }
 
     }
@@ -81,6 +82,8 @@ const signUp = async (user_name, email, pass, date_birth, address) => {
         };
         status = 400;
     }
+
+    
     return {
         status, response,
     };
@@ -88,3 +91,10 @@ const signUp = async (user_name, email, pass, date_birth, address) => {
 };
 
 module.exports = signUp;
+
+
+
+
+
+
+

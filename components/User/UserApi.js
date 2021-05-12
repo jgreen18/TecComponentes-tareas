@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const Services = require("./Services/UserServices");
 const Middleware = require("../Middleware/Middleware");
+const Dal = require("./UserDal");
+
 
 
 
@@ -20,6 +22,7 @@ User.use(cors());
 
 User.get("/all", async (req, res) => {
   try {
+    console.log("gol");
 
     const result = await Dal.query("SELECT id_user, email FROM Users");
     res.status(200).json({

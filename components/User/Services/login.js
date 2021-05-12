@@ -27,7 +27,7 @@ const login = async (email, password) => {
     }
 
     //validar constraseña nueva con la vieja 
-    console.log(users[0]);
+    // console.log(users[0]);
     if (users?.length) {
 
         const user = users[0];

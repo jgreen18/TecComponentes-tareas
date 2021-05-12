@@ -25,5 +25,6 @@ app.use("/usuarios", User.api);
 app.listen(3000, () => {
     console.clear();
     console.log("Task corriendo en puerto 3000");
+    
 
 });
